@@ -1,9 +1,8 @@
-import Header from '@/components/Header';
+import Auth from '@/components/Auth';
 export default function Home() {
   return (
     <div>
-      <Header />
-      <h1 className='text-blue-600'>Meetmax</h1>
+      <Auth />
     </div>
   );
 }

@@ -1,12 +1,13 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   return (
     <header className='bg-white'>
       <nav className='mx-auto flex items-center justify-between p-4 lg:px-8'>
         <div>
-          <a className='flex items-center' href='/' rel='noopener noreferrer'>
+          <Link className='flex items-center' href='/'>
             <Image
               src='/logo.png'
               alt='Site Logo'
@@ -15,7 +16,7 @@ export default function Header() {
               priority
             />
             <span className='ml-2'>Meetmax</span>
-          </a>
+          </Link>
         </div>
         <div className='inset-y-0 right-0 flex items-center'>
           <label htmlFor='language' className='sr-only'>
