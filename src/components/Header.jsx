@@ -25,7 +25,7 @@ export default function Header() {
           <select
             id='site-language'
             name='language'
-            className='h-full shadow-sm rounded-md py-2 pl-4 pr-2 text-gray-400 outline-none sm:text-sm'
+            className='h-full shadow-sm rounded-md py-2 pl-4 pr-2 text-gray-400 outline-none text-sm'
           >
             <option>English (UK)</option>
             <option>English (US)</option>

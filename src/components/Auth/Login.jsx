@@ -6,38 +6,39 @@ import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-const Auth = () => {
+const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
   return (
-    <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8'>
+    <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12'>
       {/* Section Title and description */}
-      <div className='w-full sm:mx-auto sm:max-w-lg'>
-        <h2 className='mt-10 text-center text-2xl font-bold text-gray-900'>
+      <div className='max-w-md w-full sm:mx-auto'>
+        <h2 className='mt-10 text-center text-2xl text-gray-500 font-bold'>
           Getting Started
         </h2>
-        <h6 className='mt-2 text-center text-gray-700'>
+        <h6 className='mt-4 max-w-md text-center text-gray-500 '>
           Create an account to continue and connect with people.
         </h6>
       </div>
 
       {/* Login Card */}
-      <div className='shadow-lg rounded-xl p-12 mt-10 sm:mx-auto sm:max-w-lg'>
+      <div className='px-6 py-8 sm:p-12 mx-auto max-w-lg mt-8 shadow-lg rounded-xl'>
         {/* Google & Apple Sign in buttons */}
-        <div className='mb-2 flex justify-evenly items-center space-x-4'>
+        <div className='flex justify-evenly items-center space-x-2 sm:space-x-4'>
           {/* Google Sign in */}
           <button
             type='button'
-            className='p-3 lg:px-5  mb-2 text-sm xs:text-xs font-medium text-gray-700 outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 flex justify-evenly items-center space-x-4'
+            className='px-2 sm:px-3 py-3 mb-2 text-xs sm:text-sm text-gray-700 outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 flex justify-between items-center space-x-1 sm:space-x-4'
           >
             <Image
+              className='sm:w-4'
               src='/icons/Google.png'
               alt='Google Icon'
-              width={13}
-              height={13}
+              width={10}
+              height={15}
               priority
             />
             <span>Log in with Google</span>
@@ -46,23 +47,24 @@ const Auth = () => {
           {/* Apple Sign in */}
           <button
             type='button'
-            className='p-3 lg:px-5  mb-2 text-sm xs:text-xs font-medium text-gray-700 outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 flex justify-evenly items-center space-x-4'
+            className='px-2 sm:px-3 py-3 mb-2 text-xs sm:text-sm text-gray-700 outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 flex justify-between items-center space-x-1 sm:space-x-4'
           >
             <Image
+              className='sm:w-4'
               src='/icons/Apple.png'
-              alt='Apple Icon'
-              width={13}
-              height={13}
+              alt='Google Icon'
+              width={10}
+              height={15}
               priority
             />
-            <span>Log in with Google</span>
+            <span>Log in with Apple</span>
           </button>
         </div>
 
         {/* hr with text */}
         <div className='flex items-center justify-center w-full'>
           <hr className='w-full h-px my-6 bg-gray-300 border-1 border-gray-300' />
-          <span className='absolute px-3 font-medium text-gray-900 bg-white'>
+          <span className='absolute px-3 text-sm sm:font-medium text-gray-900 bg-white'>
             OR
           </span>
         </div>
@@ -165,7 +167,7 @@ const Auth = () => {
           </div>
 
           {/* DOB & Gender */}
-          <div className='mt-2 flex justify-between items-center space-x-4'>
+          <div className='mt-2 sm:flex sm:justify-between sm:items-center sm:space-x-4'>
             {/* Date of Birth Input */}
             <div className='mt-4 flex justify-start items-center space-x-2 w-full h-10 rounded-md px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300'>
               <Image
@@ -199,14 +201,14 @@ const Auth = () => {
                 <div className='flex items-center me-2'>
                   <input
                     id='inline-radio'
+                    className='w-4 h-4 text-blue-600 border-gray-300'
                     type='radio'
                     value=''
                     name='inline-radio-group'
-                    className='w-4 h-4 text-blue-600 border-gray-300'
                   />
                   <label
                     htmlFor='inline-radio'
-                    className='ms-2 text-sm font-medium text-gray-400'
+                    className='ms-2 text-sm text-gray-400'
                   >
                     Male
                   </label>
@@ -214,14 +216,14 @@ const Auth = () => {
                 <div className='flex items-center me-2'>
                   <input
                     id='inline-2-radio'
+                    className='w-4 h-4 text-blue-600 border-gray-300'
                     type='radio'
                     value=''
                     name='inline-radio-group'
-                    className='w-4 h-4 text-blue-600 border-gray-300'
                   />
                   <label
                     htmlFor='inline-2-radio'
-                    className='ms-2 text-sm font-medium text-gray-400 dark:text-gray-300'
+                    className='ms-2 text-sm text-gray-400'
                   >
                     Female
                   </label>
@@ -256,4 +258,4 @@ const Auth = () => {
   );
 };
 
-export default Auth;
+export default Login;
