@@ -6,7 +6,7 @@ import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-const Login = () => {
+export default function SignUp({ setHaveAccount }) {
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -15,8 +15,8 @@ const Login = () => {
   return (
     <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12'>
       {/* Section Title and description */}
-      <div className='max-w-md w-full sm:mx-auto'>
-        <h2 className='mt-10 text-center text-2xl text-gray-500 font-bold'>
+      <div className='mx-auto max-w-md w-full'>
+        <h2 className='mt-10 text-center text-2xl text-gray-500 sm:text-gray-700 font-bold'>
           Getting Started
         </h2>
         <h6 className='mt-4 max-w-md text-center text-gray-500 '>
@@ -25,7 +25,7 @@ const Login = () => {
       </div>
 
       {/* Login Card */}
-      <div className='px-6 py-8 sm:p-12 mx-auto max-w-lg mt-8 shadow-lg rounded-xl'>
+      <div className='px-6 py-8 sm:p-12 mx-auto mt-8 lg:w-7/12 max-w-lg shadow-lg rounded-xl'>
         {/* Google & Apple Sign in buttons */}
         <div className='flex justify-evenly items-center space-x-2 sm:space-x-4'>
           {/* Google Sign in */}
@@ -243,19 +243,17 @@ const Login = () => {
           </div>
         </form>
 
-        {/* Sign in Note */}
-        <p className='mt-4 text-center text-sm text-gray-500'>
+        {/* Sign In Note */}
+        <p className='mt-4 text-center text-sm text-gray-500 cursor-pointer'>
           Already have an account?{' '}
-          <Link
-            href='#'
+          <span
             className='font-semibold leading-6 text-blue-500 hover:text-blue-400'
+            onClick={() => setHaveAccount(true)}
           >
-            Sign in
-          </Link>
+            Sign In
+          </span>
         </p>
       </div>
     </div>
   );
-};
-
-export default Login;
+}
