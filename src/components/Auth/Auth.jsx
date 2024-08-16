@@ -1,10 +1,20 @@
-import Login from './Login';
+'use client';
+import { useState } from 'react';
+import SignUp from './SignUp';
+import SignIn from './SignIn';
 
 const Auth = () => {
+  const [haveAccount, setHaveAccount] = useState(false);
   return (
-    <div>
-      <Login />
-    </div>
+    <>
+      {haveAccount === true ? (
+        <SignIn setHaveAccount={setHaveAccount} />
+      ) : haveAccount === false ? (
+        <SignUp setHaveAccount={setHaveAccount} />
+      ) : (
+        <div>Forgot Password</div>
+      )}
+    </>
   );
 };
 
