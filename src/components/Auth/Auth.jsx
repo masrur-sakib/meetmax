@@ -2,8 +2,9 @@
 import { useState } from 'react';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
+import ForgotPassword from './ForgotPassword';
 
-const Auth = () => {
+export default function Auth() {
   const [haveAccount, setHaveAccount] = useState(false);
   return (
     <>
@@ -12,10 +13,8 @@ const Auth = () => {
       ) : haveAccount === false ? (
         <SignUp setHaveAccount={setHaveAccount} />
       ) : (
-        <div>Forgot Password</div>
+        <ForgotPassword setHaveAccount={setHaveAccount} />
       )}
     </>
   );
-};
-
-export default Auth;
+}
