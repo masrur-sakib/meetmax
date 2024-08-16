@@ -14,7 +14,7 @@ export default function Header() {
     >
       <nav className='mx-auto p-4 lg:px-8 flex items-center justify-between space-x-4'>
         {/* Site Logo */}
-        <div className='flex-none w-1/5' onClick={() => setUser()}>
+        <div className='w-1/5' onClick={() => setUser()}>
           <Link className='flex items-center' href='/'>
             <Image
               src='/logo.png'
@@ -54,7 +54,7 @@ export default function Header() {
             />
             <input
               id='search'
-              className='w-full h-full text-gray-500 outline-none placeholder:text-gray-400 text-sm'
+              className='w-full h-full text-gray-500 outline-none placeholder:text-gray-400 placeholder:lg:text-sm text-sm'
               name='search'
               type='search'
               placeholder='Search for something here...'
@@ -64,7 +64,7 @@ export default function Header() {
         </div>
 
         {/* User Name and Avatar - Only Feed Screen */}
-        <div className={user ? 'w-2/5' : 'hidden'}>
+        <div className={user ? 'w-1/3 lg:w-2/5' : 'hidden'}>
           <div className='flex justify-end items-center space-x-4 font-normal text-gray-500 text-md'>
             <span>Saleh Ahmed</span>
             <Image
