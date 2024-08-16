@@ -16,7 +16,7 @@ export default function SignUp({ setHaveAccount }) {
     <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12'>
       {/* Section Title and description */}
       <div className='mx-auto max-w-md w-full'>
-        <h2 className='mt-10 text-center text-2xl text-gray-500 sm:text-gray-700 font-bold'>
+        <h2 className='mt-10 text-center text-xl sm:text-2xl text-gray-500 sm:text-gray-700 font-bold'>
           Getting Started
         </h2>
         <h6 className='mt-4 max-w-md text-center text-gray-500 '>
@@ -25,7 +25,7 @@ export default function SignUp({ setHaveAccount }) {
       </div>
 
       {/* Login Card */}
-      <div className='px-6 py-8 sm:p-12 mx-auto mt-8 lg:w-7/12 max-w-lg shadow-lg rounded-xl'>
+      <div className=' mt-8 px-6 py-8 sm:p-12 mx-auto lg:w-7/12 max-w-lg shadow-lg rounded-xl'>
         {/* Google & Apple Sign in buttons */}
         <div className='flex justify-evenly items-center space-x-2 sm:space-x-4'>
           {/* Google Sign in */}

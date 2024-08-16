@@ -1,12 +1,14 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useUserStore } from '@/store/store';
 
 export default function Header() {
+  const setUser = useUserStore((state) => state.setUser);
   return (
     <header className='bg-white'>
       <nav className='mx-auto flex items-center justify-between p-4 lg:px-8'>
-        <div>
+        <div onClick={() => setUser()}>
           <Link className='flex items-center' href='/'>
             <Image
               src='/logo.png'

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function SignIn({ setHaveAccount }) {
+export default function SignIn({ setHaveAccount, setUser }) {
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -13,7 +13,7 @@ export default function SignIn({ setHaveAccount }) {
     <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12'>
       {/* Section Title and description */}
       <div className='mx-auto max-w-md w-full'>
-        <h2 className='mt-10 text-center text-2xl text-gray-500 sm:text-gray-700 font-bold'>
+        <h2 className='mt-10 text-center text-xl sm:text-2xl text-gray-500 sm:text-gray-700 font-bold'>
           Sign In
         </h2>
         <h6 className='mt-4 max-w-md text-center text-gray-500 '>
@@ -22,7 +22,7 @@ export default function SignIn({ setHaveAccount }) {
       </div>
 
       {/* Login Card */}
-      <div className='px-6 py-8 sm:p-12 mx-auto mt lg:w-7/12 max-w-lg shadow-lg rounded-xl'>
+      <div className=' mt-8 px-6 py-8 sm:p-12 mx-auto lg:w-7/12 max-w-lg shadow-lg rounded-xl'>
         {/* Google & Apple Sign in buttons */}
         <div className='flex justify-evenly items-center space-x-2 sm:space-x-4'>
           {/* Google Sign in */}
@@ -173,6 +173,7 @@ export default function SignIn({ setHaveAccount }) {
             <button
               type='submit'
               className='flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+              onClick={() => setUser(true)}
             >
               Sign In
             </button>
