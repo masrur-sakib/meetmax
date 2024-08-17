@@ -12,7 +12,7 @@ export default function Header() {
         user ? 'hidden sm:block sticky top-0 bg-white' : 'sticky top-0 bg-white'
       }
     >
-      <nav className='mx-auto p-4 lg:px-8 flex items-center justify-between space-x-4'>
+      <nav className='mx-auto px-4 py-2 lg:px-8 flex items-center justify-between space-x-4'>
         {/* Site Logo */}
         <div className='w-1/5' onClick={() => setUser()}>
           <Link className='flex items-center' href='/'>

@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function LeftSidebar() {
   const [selected, setSelected] = useState('Feed');
   return (
-    <div className='hidden md:block w-1/3 lg:w-1/5'>
+    <div className='sticky top-16 h-[calc(100vh-spacing.16)] overflow-y-auto hidden md:block w-1/3 lg:w-1/5'>
       {leftSidebarData.map((data) => (
         <LeftSidebarEl key={data.name} data={data} selected={selected} />
       ))}

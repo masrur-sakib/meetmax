@@ -17,6 +17,27 @@ export default function Feed() {
             <div className='px-6 bg-white'>Post Card</div>
             <div className='mt-8 px-6 bg-white'>Post Card</div>
             <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
+            <div className='mt-8 px-6 bg-white'>Post Card</div>
           </div>
 
           {/* Feed Sidebar */}

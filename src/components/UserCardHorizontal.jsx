@@ -8,7 +8,7 @@ export default function UserCardHorizontal({ data }) {
       {/* Image */}
       <div className='w-1/6'>
         <Image
-          className='h-10 w-10'
+          className='sm:h-6 sm:w-8 md:h-10 md:w-10'
           src={data.avatar}
           alt={data.name}
           width={0}
@@ -18,7 +18,7 @@ export default function UserCardHorizontal({ data }) {
       </div>
 
       {/* Name */}
-      <p className='flex-1'>{data.name}</p>
+      <p className='flex-1 text-xs xl:text-sm'>{data.name}</p>
 
       {/* Active Info */}
       <div>
