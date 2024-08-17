@@ -1,10 +1,12 @@
 'use client';
 
+import LeftSidebar from './LeftSidebar';
+
 export default function Feed() {
   return (
-    <div className='mx-auto p-4 lg:px-8 flex items-center justify-between space-x-4'>
+    <div className='mx-auto p-4 lg:px-8 flex items-start justify-between space-x-6'>
       {/*Left  Sidebar */}
-      <div className='w-1/5'>Sidebar</div>
+      <LeftSidebar />
 
       {/* Feed with Sidebar */}
       <div className='flex-1 bg-gray-50 rounded-lg'>
@@ -17,12 +19,12 @@ export default function Feed() {
           </div>
 
           {/* Feed Sidebar */}
-          <div className='w-1/3'>Feed Sidebar</div>
+          <div className='hidden lg:block w-1/3'>Feed Sidebar</div>
         </div>
       </div>
 
       {/*Right  Sidebar */}
-      <div className='w-1/5'>Right Sidebar</div>
+      <div className='hidden lg:block w-1/5'>Right Sidebar</div>
     </div>
   );
 }
