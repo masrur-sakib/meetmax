@@ -8,7 +8,7 @@ import UserCardHorizontal from '../UserCardHorizontal';
 
 export default function RightSidebar() {
   return (
-    <div className='rightSidebar pr-2 sticky top-16 h-[calc(100vh-theme(spacing.24))] overflow-y-auto hidden lg:block w-1/5 '>
+    <div className='rightSidebar sticky top-16 h-[calc(100vh-theme(spacing.24))] overflow-y-auto hidden lg:block w-1/5 '>
       {/* Search */}
       <div className='flex justify-start items-center space-x-2 w-full h-10 rounded-lg px-4 py-2 ring-1 ring-inset ring-gray-300'>
         <Image
