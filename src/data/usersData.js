@@ -1,26 +1,26 @@
 export const usersData = [
   {
-    avatar: '/avatars/users/Saleh.png',
+    avatar: '/users/SalehAhmedRound.png',
     name: 'Saleh Ahmed',
   },
   {
-    avatar: '/avatars/users/Edilson.png',
+    avatar: '/users/EdilsonRyan.png',
     name: 'Edilson Ryan',
   },
   {
-    avatar: '/avatars/users/Afrin.png',
+    avatar: '/users/AfrinCarter.png',
     name: 'Afrin Carter',
   },
   {
-    avatar: '/avatars/users/Eduardo.png',
+    avatar: '/users/EduardoFerguson.png',
     name: 'Eduardo Ferguson',
   },
   {
-    avatar: '/avatars/users/Jay.png',
+    avatar: '/users/JayMitchel.png',
     name: 'Jay Mitchel',
   },
-  //   {
-  //     avatar: '/avatars/users/Mark.png',
-  //     name: 'Mark Ryan',
-  //   },
+  {
+    avatar: '/users/MarkRyan.png',
+    name: 'Mark Ryan',
+  },
 ];

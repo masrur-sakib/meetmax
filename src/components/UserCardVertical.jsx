@@ -17,7 +17,7 @@ export default function UserCardVertical({ data }) {
         className={`${
           data.name === 'Saleh Ahmed' ? 'block' : 'hidden'
         } p-1 bg-white rounded-xl relative bottom-2`}
-        src='/icons/feed/rightSidebar/Add.png'
+        src='/icons/Add.png'
         alt='add'
         width={18}
         height={16}

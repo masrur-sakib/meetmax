@@ -39,7 +39,7 @@ export default function RightSidebar() {
       <div className='mt-6 flex justify-between items-center text-sm text-gray-600 font-bold'>
         <p>Friends</p>
         <Image
-          src='/icons/feed/rightSidebar/ThreeDots.png'
+          src='/icons/ThreeDots.png'
           className='cursor-pointer'
           alt='ThreeDotsIcon'
           width={16}

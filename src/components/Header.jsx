@@ -68,7 +68,7 @@ export default function Header() {
           <div className='flex justify-end items-center space-x-4 font-normal text-gray-500 text-md'>
             <span>Saleh Ahmed</span>
             <Image
-              src='/avatars/header-avatar.png'
+              src='/users/SalehAhmed.png'
               alt='Search Icon'
               className='rounded-lg'
               width={40}

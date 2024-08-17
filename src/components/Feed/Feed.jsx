@@ -10,7 +10,7 @@ export default function Feed() {
       <LeftSidebar />
 
       {/* Feed with Sidebar */}
-      <div className='flex-1 bg-gray-50 rounded-lg'>
+      <div className='flex-1 bg-zinc-50 rounded-xl'>
         <div className='p-6 flex justify-between items-center'>
           {/* Feed */}
           <div className='flex-1'>

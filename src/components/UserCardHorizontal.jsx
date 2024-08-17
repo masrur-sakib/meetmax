@@ -24,7 +24,7 @@ export default function UserCardHorizontal({ data }) {
       <div>
         {data.status === 'active' ? (
           <Image
-            src='/icons/feed/rightSidebar/Active.png'
+            src='/icons/Active.png'
             alt='ActiveIcon'
             width={8}
             height={8}
