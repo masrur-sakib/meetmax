@@ -54,7 +54,7 @@ export default function Header() {
             />
             <input
               id='search'
-              className='w-full h-full text-gray-500 outline-none placeholder:text-gray-400 placeholder:lg:text-sm text-sm'
+              className='w-full h-full outline-none placeholder:text-gray-400 placeholder:lg:text-sm text-sm'
               name='search'
               type='search'
               placeholder='Search for something here...'

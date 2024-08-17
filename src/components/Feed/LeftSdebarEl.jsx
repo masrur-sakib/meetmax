@@ -10,6 +10,7 @@ export default function LeftSidebarEl({ data, selected }) {
           ? 'bg-slate-500 text-white hover:bg-slate-500'
           : ''
       } mt-2 p-4 flex justify-content items-center space-x-4 text-lg rounded-lg cursor-pointer hover:bg-gray-100`}
+      onClick={data.name === 'Logout' ? () => console.log('logout') : null}
     >
       <Image src={data.src} alt={data.name} width={20} height={20} />
       <p>{data.name}</p>

@@ -1,6 +1,7 @@
 'use client';
 
 import LeftSidebar from './LeftSidebar';
+import RightSidebar from './RightSidebar';
 
 export default function Feed() {
   return (
@@ -24,7 +25,7 @@ export default function Feed() {
       </div>
 
       {/*Right  Sidebar */}
-      <div className='hidden lg:block w-1/5'>Right Sidebar</div>
+      <RightSidebar />
     </div>
   );
 }

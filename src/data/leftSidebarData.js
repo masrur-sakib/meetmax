@@ -1,41 +1,41 @@
 export const leftSidebarData = [
   {
-    src: '/icons/HomeFeed.png',
+    src: '/icons/feed/leftSidebar/HomeFeed.png',
     name: 'Feed',
     alertNumbers: 0,
   },
   {
-    src: '/icons/Community.png',
+    src: '/icons/feed/leftSidebar/Community.png',
     name: 'My Community',
     alertNumbers: 0,
   },
   {
-    src: '/icons/Messages.png',
+    src: '/icons/feed/leftSidebar/Messages.png',
     name: 'Messages',
     alertNumbers: 0,
   },
   {
-    src: '/icons/Notification.png',
+    src: '/icons/feed/leftSidebar/Notification.png',
     name: 'Notification',
     alertNumbers: 2,
   },
   {
-    src: '/icons/Explore.png',
+    src: '/icons/feed/leftSidebar/Explore.png',
     name: 'Explore',
     alertNumbers: 0,
   },
   {
-    src: '/icons/Profile.png',
+    src: '/icons/feed/leftSidebar/Profile.png',
     name: 'Profile',
     alertNumbers: 0,
   },
   {
-    src: '/icons/Settings.png',
+    src: '/icons/feed/leftSidebar/Settings.png',
     name: 'Settings',
     alertNumbers: 0,
   },
   {
-    src: '/icons/Logout.png',
+    src: '/icons/feed/leftSidebar/Logout.png',
     name: 'Logout',
     alertNumbers: 0,
   },
