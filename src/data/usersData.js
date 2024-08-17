@@ -1,4 +1,4 @@
-export const users = [
+export const usersData = [
   {
     avatar: '/avatars/users/Saleh.png',
     name: 'Saleh Ahmed',

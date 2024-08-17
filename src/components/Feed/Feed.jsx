@@ -5,7 +5,7 @@ import RightSidebar from './RightSidebar';
 
 export default function Feed() {
   return (
-    <div className='mx-auto p-4 lg:px-8 flex items-start justify-between space-x-6'>
+    <div className='mx-auto px-4 lg:px-8 flex items-start justify-between space-x-6'>
       {/*Left  Sidebar */}
       <LeftSidebar />
 

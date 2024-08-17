@@ -1,8 +1,10 @@
 'use client';
 
-import { users } from '@/data/users';
 import Image from 'next/image';
 import UserCardVertical from '../UserCardVertical';
+import { usersData } from '@/data/usersData';
+import { friendsData } from '@/data/friendsData';
+import UserCardHorizontal from '../UserCardHorizontal';
 
 export default function RightSidebar() {
   return (
@@ -28,13 +30,26 @@ export default function RightSidebar() {
 
       {/* Users Section */}
       <div className='flex justify-between items-center'>
-        {users.slice(0, 4).map((data) => (
-          <UserCardVertical key={users.name} data={data} />
+        {usersData.slice(0, 4).map((data) => (
+          <UserCardVertical key={usersData.name} data={data} />
         ))}
       </div>
 
       {/* Friends Section */}
-      <p>Friends</p>
+      <div className='mt-6 flex justify-between items-center text-sm text-gray-600 font-bold'>
+        <p>Friends</p>
+        <Image
+          src='/icons/feed/rightSidebar/ThreeDots.png'
+          className='cursor-pointer'
+          alt='ThreeDotsIcon'
+          width={16}
+          height={8}
+          unoptimized
+        />
+      </div>
+      {friendsData.map((data) => (
+        <UserCardHorizontal key={data.name} data={data} />
+      ))}
     </div>
   );
 }
