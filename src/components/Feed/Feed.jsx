@@ -1,7 +1,9 @@
 'use client';
 
+import { postsData } from '@/data/postsData';
 import FeedSidebar from './FeedSidebar';
 import LeftSidebar from './LeftSidebar';
+import Post from './Post';
 import PublishPostCard from './PublishPostCard';
 import RightSidebar from './RightSidebar';
 
@@ -17,6 +19,9 @@ export default function Feed() {
           {/* Feed */}
           <div className='flex-1 text-gray-500'>
             <PublishPostCard />
+            {postsData.map((post) => (
+              <Post key={post.id} post={post} />
+            ))}
           </div>
         </div>
       </div>

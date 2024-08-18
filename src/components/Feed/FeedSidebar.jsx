@@ -50,7 +50,7 @@ export default function FeedSidebar() {
         </div>
         <div className='py-4 flex flex-col justify-center items-center'>
           {eventsData.map((data) => (
-            <EventCard key={data.name} data={data} />
+            <EventCard key={data.id} data={data} />
           ))}
         </div>
       </div>

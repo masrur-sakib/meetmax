@@ -1,5 +1,6 @@
 export const usersData = [
   {
+    id: '97b57bc0-e6e1-4fae-914f-164393253d8b',
     avatar: '/users/KayleighBysouth.png',
     name: 'Kayleigh Bysouth',
     about: 'Founder & CEO at Trophy',
@@ -10,6 +11,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '7acccdb6-6a3f-4883-8e16-e1c1bed45bb1',
     avatar: '/users/JessPhillipsMP.png',
     name: 'Jess Phillips MP',
     about: 'Founder & CEO at Trophy',
@@ -20,6 +22,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: 'b649623c-2fc1-4436-8812-cc3714d2644f',
     avatar: '/users/MPEslamHisham.png',
     name: 'MP Eslam Hisham',
     about: 'Founder & CEO at Trophy',
@@ -30,6 +33,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '7dbd750c-5811-4fec-9c15-8570dcbc14a8',
     avatar: '/users/LevizjaVetvendos.png',
     name: 'Levizja Vetvendos',
     about: 'Founder & CEO at Trophy',
@@ -40,6 +44,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '650905f1-e45f-4603-b2df-e2254b35bd10',
     avatar: '/users/AfrimKonjufca.png',
     name: 'Afrim Konjufca',
     about: 'Founder & CEO at Trophy',
@@ -50,6 +55,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '25a59c32-c770-4bad-98f5-6b98f0d270fb',
     avatar: '/users/AdayinVetvendosje.png',
     name: 'Adayin Vetvendosje',
     about: 'Founder & CEO at Trophy',
@@ -60,6 +66,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '9bfcf81c-e958-42e3-b078-16a35620a807',
     avatar: '/users/AlbiniVjosa.png',
     name: 'Albini Vjosa',
     about: 'Founder & CEO at Trophy',
@@ -70,6 +77,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '1ba53313-a1d7-4412-b0eb-3d0d75d75025',
     avatar: '/users/EduardoOrtega.png',
     name: 'Eduardo Ortega',
     about: 'Founder & CEO at Trophy',
@@ -80,6 +88,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: 'a46805de-f053-4eab-9620-19ee7c64f126',
     avatar: '/users/YasinKawakamu.png',
     name: 'Yasin Kawakamu',
     about: 'Founder & CEO at Trophy',
@@ -90,6 +99,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: 'c451d45f-7f9d-4980-b4db-1addb73bed49',
     avatar: '/users/EdilsonDeCarvalho.png',
     name: 'Edilson De Carvalho',
     about: 'Founder & CEO at Trophy',
@@ -100,6 +110,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: 'c18c6e73-dfb2-47b5-a98d-32b961200745',
     avatar: '/users/AlbiniVjosaGlauki.png',
     name: 'Albini Vjosa Glauki',
     about: 'Founder & CEO at Trophy',
@@ -110,6 +121,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '19738e6f-4910-4261-8ea1-08f4d20205d6',
     avatar: '/users/MuhametMurteza.png',
     name: 'Muhamet Murteza',
     about: 'Founder & CEO at Trophy',
@@ -120,6 +132,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '0ed79ed3-3621-4753-9b1f-ee462801f7a1',
     avatar: '/users/JoseAntonio.png',
     name: 'Jose Antonio',
     about: 'Founder & CEO at Trophy',
@@ -130,6 +143,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '3a670d93-1f8c-4dab-a690-6d533e5ebd38',
     avatar: '/users/KujtimRushiti.png',
     name: 'Kujtim Rushiti',
     about: 'Founder & CEO at Trophy',
@@ -140,6 +154,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: 'aa15652c-49c7-4a79-a9a9-ea48ae448b4c',
     avatar: '/users/OstojaOstojic.png',
     name: 'Ostoja Ostojic',
     about: 'Founder & CEO at Trophy',
@@ -150,6 +165,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '5ade3e4c-76b0-4deb-b9f1-693f1d21af8a',
     avatar: '/users/XhevdetCazimi.png',
     name: 'Xhevdet Cazimi',
     about: 'Founder & CEO at Trophy',
@@ -160,6 +176,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '4890fe3c-6ce8-4f7c-9c18-003550bec233',
     avatar: '/users/SalehAhmedRound.png',
     name: 'Saleh Ahmed',
     about: 'Founder & CEO at Trophy',
@@ -170,6 +187,7 @@ export const usersData = [
     storyShared: true,
   },
   {
+    id: '766f09b7-9615-473d-bc90-6f4e64242c34',
     avatar: '/users/EdilsonRyan.png',
     name: 'Edilson Ryan',
     about: 'Founder & CEO at Trophy',
@@ -180,6 +198,7 @@ export const usersData = [
     storyShared: true,
   },
   {
+    id: '5b1d1dfa-2ff3-493e-9aa2-c90c945e26b2',
     avatar: '/users/AfrinCarter.png',
     name: 'Afrin Carter',
     about: 'Founder & CEO at Trophy',
@@ -190,6 +209,7 @@ export const usersData = [
     storyShared: true,
   },
   {
+    id: 'fe089700-59b5-4e6b-b197-6d1a4b499938',
     avatar: '/users/EduardoFerguson.png',
     name: 'Eduardo Ferguson',
     about: 'Founder & CEO at Trophy',
@@ -200,6 +220,7 @@ export const usersData = [
     storyShared: true,
   },
   {
+    id: 'faa9a1ed-3ee9-447a-8829-82d0e4e09c4e',
     avatar: '/users/MarkRyan.png',
     name: 'Mark Ryan',
     about: 'Founder & CEO at Trophy',
@@ -210,6 +231,7 @@ export const usersData = [
     storyShared: true,
   },
   {
+    id: 'd1492d2c-f006-49fa-8d4f-94268422ed53',
     avatar: '/users/RadovanSkillArena.png',
     name: 'Radovan SkillArena',
     about: 'Founder & CEO at Trophy',
@@ -220,6 +242,7 @@ export const usersData = [
     storyShared: false,
   },
   {
+    id: '7fa93cef-3c29-4a73-8788-488ae2be48b7',
     avatar: '/users/HarrisBarker.png',
     name: 'Harris Barker',
     about: 'Founder & CEO at Trophy',
