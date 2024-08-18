@@ -20,24 +20,28 @@ export default function UserCardProfile({ data }) {
           <div className='mt-3 flex justify-start items-center space-x-3'>
             <Image
               src='/icons/Explore.png'
+              className='cursor-pointer'
               alt='Explore Icon'
               width={12}
               height={12}
             />
             <Image
               src='/icons/Facebook.png'
+              className='cursor-pointer'
               alt='Facebook Icon'
               width={12}
               height={12}
             />
             <Image
               src='/icons/Twitter.png'
+              className='cursor-pointer'
               alt='ActiveIcon'
               width={12}
               height={12}
             />
             <Image
               src='/icons/Instagram.png'
+              className='cursor-pointer'
               alt='ActiveIcon'
               width={12}
               height={12}
