@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* Scrollbar Style */
-.rightSidebar::-webkit-scrollbar {
+.rightSidebar,
+.feedSidebar::-webkit-scrollbar {
   display: none;
 }

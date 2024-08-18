@@ -4,11 +4,11 @@ import Image from 'next/image';
 
 export default function UserCardHorizontal({ data }) {
   return (
-    <div className='my-2 h-10 flex justify-between items-center space-x-4 text-sm cursor-pointer'>
+    <div className='my-2 h-10 flex justify-between items-center space-x-2 xl:space-x-4 text-sm cursor-pointer'>
       {/* Image */}
       <div className='w-1/6'>
         <Image
-          className='sm:h-6 sm:w-8 md:h-10 md:w-10'
+          className='h-8 w-8 xl:h-10 xl:w-10'
           src={data.avatar}
           alt={data.name}
           width={0}
@@ -18,7 +18,7 @@ export default function UserCardHorizontal({ data }) {
       </div>
 
       {/* Name */}
-      <p className='flex-1 text-xs xl:text-sm'>{data.name}</p>
+      <p className='flex-1 text-xs 2xl:text-sm'>{data.name}</p>
 
       {/* Active Info */}
       <div>

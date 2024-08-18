@@ -16,13 +16,13 @@ export default function UserCardVertical({ data }) {
       <Image
         className={`${
           data.name === 'Saleh Ahmed' ? 'block' : 'hidden'
-        } p-1 bg-white rounded-xl relative bottom-2`}
+        } p-1 bg-white rounded-xl relative bottom-2 h-4 w-4 2xl:h-5 2xl:w-5`}
         src='/icons/Add.png'
         alt='add'
-        width={18}
-        height={16}
+        width={0}
+        height={0}
       />
-      <p className='text-xs xl:text-sm'>{data.name.split(' ')[0]}</p>
+      <p className='text-xs 2xl:text-sm'>{data.name.split(' ')[0]}</p>
     </div>
   );
 }

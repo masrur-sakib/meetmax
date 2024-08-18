@@ -50,7 +50,7 @@ export default function UserCardProfile({ data }) {
         </div>
       </div>
       {/* Buttons */}
-      <div className='mt-4 flex justify-center items-center space-x-4'>
+      <div className='mt-4 flex justify-center items-center space-x-4 2xl:space-x-6'>
         <button
           type='button'
           className='px-7 py-1.5 text-xs outline-none rounded-lg border border-gray-200 hover:bg-gray-100'

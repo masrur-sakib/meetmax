@@ -16,7 +16,7 @@ export default function FeedSidebar() {
     notFriendUsers[Math.floor(Math.random() * notFriendUsers.length)];
 
   return (
-    <div className='hidden xl:block w-60 2xl:w-64 text-gray-500'>
+    <div className='feedSidebar py-6 px-4 sticky top-20 h-[calc(100vh-theme(spacing.20))] overflow-y-auto hidden xl:block w-60 2xl:w-80 bg-zinc-50 text-gray-500'>
       {/* Profile Suggestion Section */}
       <div className='bg-white rounded-lg'>
         <div className='p-2 flex justify-between items-center border-b border-gray-200'>
@@ -39,7 +39,7 @@ export default function FeedSidebar() {
             unoptimized
           />
         </div>
-        <div className='py-4'>
+        <div className='py-4 flex flex-col justify-center items-center'>
           {eventsData.map((data) => (
             <EventCard key={data.name} data={data} />
           ))}
