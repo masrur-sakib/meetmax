@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Scrollbar Style */
-.rightSidebar,
+.rightSidebar::-webkit-scrollbar,
 .feedSidebar::-webkit-scrollbar {
   display: none;
 }
