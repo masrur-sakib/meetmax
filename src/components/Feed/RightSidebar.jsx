@@ -3,10 +3,19 @@
 import Image from 'next/image';
 import UserCardVertical from '../UserCardVertical';
 import { usersData } from '@/data/usersData';
-import { friendsData } from '@/data/friendsData';
 import UserCardHorizontal from '../UserCardHorizontal';
 
 export default function RightSidebar() {
+  const storyData = usersData
+    .filter((el) => {
+      return el.storyShared === true;
+    })
+    .slice(0, 4);
+
+  const friendsData = usersData.filter((el) => {
+    return el.isFriend === true;
+  });
+
   return (
     <div className='rightSidebar sticky top-20 h-[calc(100vh-theme(spacing.20))] overflow-y-auto hidden lg:block w-1/5 '>
       {/* Search */}
@@ -28,9 +37,9 @@ export default function RightSidebar() {
         />
       </div>
 
-      {/* Users Section */}
+      {/* Story Section */}
       <div className='flex justify-between items-center'>
-        {usersData.slice(0, 4).map((data) => (
+        {storyData.map((data) => (
           <UserCardVertical key={usersData.name} data={data} />
         ))}
       </div>
