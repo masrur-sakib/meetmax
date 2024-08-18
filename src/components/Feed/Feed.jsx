@@ -1,5 +1,6 @@
 'use client';
 
+import FeedSidebar from './FeedSidebar';
 import LeftSidebar from './LeftSidebar';
 import RightSidebar from './RightSidebar';
 
@@ -11,7 +12,7 @@ export default function Feed() {
 
       {/* Feed with Sidebar */}
       <div className='flex-1 bg-zinc-50 rounded-xl'>
-        <div className='p-6 flex justify-between items-center'>
+        <div className='p-6 flex justify-between items-start space-x-4'>
           {/* Feed */}
           <div className='flex-1'>
             <div className='px-6 bg-white'>Post Card</div>
@@ -41,7 +42,7 @@ export default function Feed() {
           </div>
 
           {/* Feed Sidebar */}
-          <div className='hidden lg:block w-1/3'>Feed Sidebar</div>
+          <FeedSidebar />
         </div>
       </div>
 

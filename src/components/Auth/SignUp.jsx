@@ -235,7 +235,7 @@ export default function SignUp({ setHaveAccount }) {
           <div className='mt-6'>
             <button
               type='submit'
-              className='flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+              className='flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm bg-blue-500 hover:bg-blue-600'
             >
               Sign Up
             </button>
@@ -246,7 +246,7 @@ export default function SignUp({ setHaveAccount }) {
         <p className='mt-4 text-center text-sm text-gray-500 cursor-pointer'>
           Already have an account?{' '}
           <span
-            className='font-semibold leading-6 text-blue-500 hover:text-blue-400'
+            className='font-semibold leading-6 text-blue-500 hover:text-blue-600'
             onClick={() => setHaveAccount(true)}
           >
             Sign In

@@ -7,13 +7,13 @@ import UserCardHorizontal from '../UserCardHorizontal';
 
 export default function RightSidebar() {
   const storyData = usersData
-    .filter((el) => {
-      return el.storyShared === true;
+    .filter((user) => {
+      return user.storyShared === true;
     })
     .slice(0, 4);
 
-  const friendsData = usersData.filter((el) => {
-    return el.isFriend === true;
+  const friendsData = usersData.filter((user) => {
+    return user.isFriend === true;
   });
 
   return (
@@ -40,7 +40,7 @@ export default function RightSidebar() {
       {/* Story Section */}
       <div className='flex justify-between items-center'>
         {storyData.map((data) => (
-          <UserCardVertical key={usersData.name} data={data} />
+          <UserCardVertical key={data.name} data={data} />
         ))}
       </div>
 
