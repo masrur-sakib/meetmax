@@ -15,7 +15,7 @@ export default function UserCardProfile({ data }) {
           unoptimized
         />
         <div>
-          <p className='text-sm'>{data.name}</p>
+          <p className='text-sm cursor-pointer'>{data.name}</p>
           <p className='text-vs text-gray-400'>{data.about}</p>
           <div className='mt-3 flex justify-start items-center space-x-3'>
             <Image

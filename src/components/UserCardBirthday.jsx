@@ -15,7 +15,7 @@ export default function UserCardBirthday({ data }) {
           unoptimized
         />
         <div className='flex-1'>
-          <p className='text-sm'>{data.name}</p>
+          <p className='text-sm cursor-pointer'>{data.name}</p>
           <p className='text-vs text-gray-400'>Birthday Today</p>
         </div>
       </div>
