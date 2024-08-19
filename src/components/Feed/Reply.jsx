@@ -45,7 +45,7 @@ export default function Reply({ reply, comment }) {
                 {comment.description}
               </p>
             </div>
-            <p className='mt-2 text-xs sm:text-sm text-gray-400'>
+            <p className='mt-2 text-xs 2xl:text-sm text-gray-500'>
               {reply.description}
             </p>
           </div>

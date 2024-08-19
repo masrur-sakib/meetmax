@@ -36,7 +36,7 @@ export default function Comment({ comment }) {
                 unoptimized
               />
             </div>
-            <p className='mt-2 text-xs sm:text-sm text-gray-400'>
+            <p className='mt-2 text-xs 2xl:text-sm font-normal text-gray-500'>
               {comment.description}
             </p>
           </div>

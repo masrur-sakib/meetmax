@@ -39,7 +39,7 @@ export default function Post({ data }) {
 
       {/* Description Secton */}
       {data.description && (
-        <p className='mt-4 text-gray-500 text-vs sm:text-sm 2xl:text-base'>
+        <p className='mt-4 text-gray-500 text-vs sm:text-xs 2xl:text-sm'>
           {data.description}
         </p>
       )}
