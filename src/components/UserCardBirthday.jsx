@@ -38,7 +38,7 @@ export default function UserCardBirthday({ data }) {
           unoptimized
         />
       </div>
-      <div className='mt-4 p-2 bg-zinc-50 flex justify-start items-start space-x-4 2xl:space-x-6 cursor-pointer'>
+      <div className='mt-4 p-2 bg-zinc-50 flex justify-start items-start space-x-4 cursor-pointer'>
         <Image
           className='h-8 w-8'
           src='/icons/birthday.png'
