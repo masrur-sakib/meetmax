@@ -5,7 +5,7 @@ export const postsData = [
     avatar: 'users/SepuralGallery.png',
     postBy: 'Sepural Gallery',
     postPrivacy: 'Public',
-    content: ``,
+    description: ``,
     images: ['/images/Image1-1'],
     comments: [],
   },
@@ -15,7 +15,7 @@ export const postsData = [
     avatar: 'users/ProthinidiThomas.png',
     postBy: 'Prothinidi Thomas',
     postPrivacy: 'Public',
-    content: `If you think adventure is dangerous, try routine, it's lethal Paulo Coelho! Good morning all friends.`,
+    description: `If you think adventure is dangerous, try routine, it's lethal Paulo Coelho! Good morning all friends.`,
     images: ['/images/Image1-3', '/images/Image2-3', '/images/Image3-3'],
     comments: [
       {
@@ -23,14 +23,14 @@ export const postsData = [
         avatar: 'users/SwapanBala.png',
         postBy: 'Swapan Bala',
         postTime: '9h',
-        content: 'Looks amazing and breathtaking. Been there, beautiful!',
+        description: 'Looks amazing and breathtaking. Been there, beautiful!',
         replies: [
           {
             id: 'e2dd5707-6791-4c3d-9fc3-591965e19be8',
             avatar: 'users/WhitechapelGallery.png',
             postBy: 'Whitechapel Gallery',
             postTime: '9h',
-            content: 'Thank you @Swapan Bala',
+            description: 'Thank you @Swapan Bala',
           },
         ],
       },
