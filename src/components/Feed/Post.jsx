@@ -117,6 +117,10 @@ export default function Post({ data }) {
         data.comments.map((comment) => (
           <Comment key={comment.id} comment={comment} />
         ))}
+
+      <p className='my-4 ml-10 text-sm text-gray-400 cursor-pointer'>
+        See 1 more comment
+      </p>
     </div>
   );
 }
