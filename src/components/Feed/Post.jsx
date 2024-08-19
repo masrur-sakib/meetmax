@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import PostImage from './PostImage';
 import PostComment from './PostComment';
+import Comment from './Comment';
 
 export default function Post({ data }) {
   return (
@@ -110,6 +111,12 @@ export default function Post({ data }) {
 
       {/* Post Comment Section */}
       <PostComment data={data.comments} />
+
+      {/* Comments & Replies */}
+      {data.comments &&
+        data.comments.map((comment) => (
+          <Comment key={comment.id} comment={comment} />
+        ))}
     </div>
   );
 }
