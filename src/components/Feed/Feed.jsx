@@ -19,8 +19,8 @@ export default function Feed() {
           {/* Feed */}
           <div className='flex-1 text-gray-500'>
             <PublishPostCard />
-            {postsData.map((post) => (
-              <Post key={post.id} post={post} />
+            {postsData.map((data) => (
+              <Post key={data.id} data={data} />
             ))}
           </div>
         </div>

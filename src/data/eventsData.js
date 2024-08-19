@@ -5,7 +5,7 @@ export const eventsData = [
     name: 'Graduation Ceremony',
     description: 'The graduation ceremony is also sometimes called...',
     seenCount: 8,
-    seenBy: '/icons/seenBy8.png',
+    seenBy: '/images/seenBy8.png',
   },
   {
     id: '9d8ec6e0-0f5b-45eb-ae10-e37b0ad53f6e',
@@ -13,6 +13,6 @@ export const eventsData = [
     name: 'Photography Ideas',
     description: 'Reflections, Reflections work because they can create...',
     seenCount: 11,
-    seenBy: '/icons/seenBy11.png',
+    seenBy: '/images/seenBy11.png',
   },
 ];
