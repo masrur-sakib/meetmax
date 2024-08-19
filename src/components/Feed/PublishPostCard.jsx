@@ -23,9 +23,9 @@ export default function PublishPostCard() {
           required
         />
       </div>
-      <div className='mt-6 mx-2 text-xs flex justify-between items-center space-x-2 sm:space-x-4'>
-        <div className='flex justify-center items-center space-x-4 sm:space-x-6'>
-          <div className='flex justify-center items-center space-x-2 sm:space-x-3 cursor-pointer'>
+      <div className='mt-6 mx-2 flex justify-between items-center space-x-2 sm:space-x-4'>
+        <div className='flex justify-center items-center  space-x-6 xl:space-x-4 2xl:space-x-6 text-sm lg:text-xs 2xl:text-sm'>
+          <div className='flex justify-center items-center space-x-2 2xl:space-x-3 cursor-pointer'>
             <Image
               className='w-4 h-4'
               src='/icons/VideoCamera.png'
@@ -35,10 +35,10 @@ export default function PublishPostCard() {
               unoptimized
             />
             <p className='flex justify-center items-center space-x-1'>
-              <span>Live</span> <span className='hidden sm:block'>Video</span>
+              Live <span className='hidden sm:block'>Video</span>
             </p>
           </div>
-          <div className='flex justify-center items-center space-x-2 sm:space-x-3 cursor-pointer'>
+          <div className='flex justify-center items-center space-x-2 2xl:space-x-3 cursor-pointer'>
             <Image
               className='w-4 h-4'
               src='/icons/Picture.png'
@@ -47,11 +47,11 @@ export default function PublishPostCard() {
               height={0}
               unoptimized
             />
-            <p className='flex justify-center items-center'>
+            <p className='flex justify-center items-center t'>
               Photo<span className='hidden sm:block'>/Video</span>
             </p>
           </div>
-          <div className='flex justify-center items-center space-x-2 sm:space-x-3 cursor-pointer'>
+          <div className='flex justify-center items-center space-x-2 2xl:space-x-3 cursor-pointer'>
             <Image
               className='w-4 h-4'
               src='/icons/Smile.png'
