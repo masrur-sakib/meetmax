@@ -40,7 +40,7 @@ export default function RightSidebar() {
       {/* Story Section */}
       <div className='flex justify-between items-center'>
         {storyData.map((data) => (
-          <UserCardVertical key={data.id} data={data} />
+          <UserCardVertical key={data.id} data={data} position='rightSidebar' />
         ))}
       </div>
 

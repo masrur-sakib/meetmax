@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function UserCardVertical({ data }) {
   return (
-    <div className='w-1/4 mt-4 py-2 px-1 lg:p-2 2xl:p-3 flex flex-col justify-center items-center [&:nth-child(n+2)]:space-y-4 cursor-pointer'>
+    <div className='mt-4 mx-2 lg:mx-0 w-1/6 max-w-24 lg:w-1/4 py-2 px-1 lg:p-2 2xl:p-3 flex flex-col justify-center items-center [&:nth-child(n+2)]:space-y-4 cursor-pointer'>
       <Image
         className='h-full w-full'
         src={data.avatar}

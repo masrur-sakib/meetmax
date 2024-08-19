@@ -118,6 +118,7 @@ export default function Post({ data }) {
           <Comment key={comment.id} comment={comment} />
         ))}
 
+      {/* Show More Comments */}
       {data.comments.length > 0 ? (
         <p className='mt-4 ml-2 text-sm text-gray-400 cursor-pointer'>
           See 1 more comment

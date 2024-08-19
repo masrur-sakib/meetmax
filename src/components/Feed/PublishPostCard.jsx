@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function PublishPostCard() {
   return (
-    <div className='px-4 py-6 bg-white'>
+    <div className='mt-4 sm:mt-0 px-4 py-6 bg-white'>
       <div className='h-10 flex justify-between items-center space-x-4'>
         <Image
           className='w-10 h-full rounded-full'
