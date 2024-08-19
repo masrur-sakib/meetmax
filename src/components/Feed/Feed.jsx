@@ -14,22 +14,20 @@ export default function Feed() {
       {/*Left  Sidebar */}
       <LeftSidebar />
 
-      {/* Feed with Sidebar */}
-      <div className='flex-1 bg-zinc-50 rounded-xl'>
-        <div className='sm:px-6 sm:pt-6 sm:pb-10 flex justify-between items-start space-x-4 xl:space-x-8'>
-          {/* Feed */}
-          <div className='flex-1 text-gray-500'>
-            {/* Story Section - Only Small Screen */}
-            <StoryCard position='topFeed' />
+      {/* Feed */}
+      <div className='sm:pl-6 sm:pr-6 xl:pr-0 sm:pt-6 sm:pb-10 flex-1 bg-zinc-50 rounded-xl text-gray-500'>
+        {/* Story Section - Only Small Screen */}
+        <StoryCard position='topFeed' />
 
-            <PublishPostCard />
+        {/* Post Publish Card */}
+        <PublishPostCard />
 
-            {postsData.map((data) => (
-              <Post key={data.id} data={data} />
-            ))}
-          </div>
-        </div>
+        {/* Posts */}
+        {postsData.map((data) => (
+          <Post key={data.id} data={data} />
+        ))}
       </div>
+
       {/* Feed Sidebar */}
       <FeedSidebar />
 

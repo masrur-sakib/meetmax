@@ -25,7 +25,7 @@ export default function FeedSidebar() {
     }
   });
   return (
-    <div className='feedSidebar py-6 px-4 sticky top-20 h-[calc(100vh-theme(spacing.20))] overflow-y-auto hidden xl:block w-72 bg-zinc-50 text-gray-500'>
+    <div className='feedSidebar py-6 px-6 sticky top-20 h-[calc(100vh-theme(spacing.20))] overflow-y-auto hidden xl:block w-72 bg-zinc-50 text-gray-500'>
       {/* Profile Suggestion Section */}
       <div className='bg-white rounded-lg'>
         <div className='p-2 flex justify-between items-center border-b border-gray-200'>
