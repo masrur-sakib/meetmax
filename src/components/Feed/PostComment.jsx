@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Comment from './Comment';
 
 export default function PostComment({ data }) {
   return (
@@ -64,6 +65,8 @@ export default function PostComment({ data }) {
       </div>
 
       {/* Comments & Replies */}
+      {data &&
+        data.map((comment) => <Comment key={comment.id} data={comment} />)}
     </div>
   );
 }

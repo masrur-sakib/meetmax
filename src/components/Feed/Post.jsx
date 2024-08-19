@@ -19,7 +19,7 @@ export default function Post({ data }) {
             unoptimized
           />
           <div className='flex flex-col justify-center items-start'>
-            <p className='text-sm cursor-pointer'>{data.postBy}</p>
+            <p className='text-sm cursor-pointer'>{data.postedBy}</p>
             <p className='text-vs text-gray-400'>
               <span className='mr-2'>{data.postTime}</span>{' '}
               <span>{data.postPrivacy}</span>
