@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import PostImage from './PostImage';
 
 export default function Post({ data }) {
   return (
@@ -40,6 +41,9 @@ export default function Post({ data }) {
           {data.description}
         </p>
       )}
+
+      {/* Image Section */}
+      {data.images && <PostImage images={data.images} />}
     </div>
   );
 }

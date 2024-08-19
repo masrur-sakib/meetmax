@@ -6,7 +6,7 @@ export const postsData = [
     postBy: 'Sepural Gallery',
     postPrivacy: 'Public',
     description: ``,
-    images: ['/images/Image1-1'],
+    images: ['/images/Image1-1-high.png'],
     comments: [],
   },
   {
@@ -16,7 +16,11 @@ export const postsData = [
     postBy: 'Prothinidi Thomas',
     postPrivacy: 'Public',
     description: `If you think adventure is dangerous, try routine, it's lethal Paulo Coelho! Good morning all friends.`,
-    images: ['/images/Image1-3', '/images/Image2-3', '/images/Image3-3'],
+    images: [
+      '/images/Image1-3.png',
+      '/images/Image2-3.png',
+      '/images/Image3-3.png',
+    ],
     comments: [
       {
         id: 'a426d62f-d555-4e5d-9486-626475fba76e',
