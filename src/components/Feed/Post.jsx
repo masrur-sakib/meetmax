@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import PostImage from './PostImage';
+import PostComment from './PostComment';
 
 export default function Post({ data }) {
   return (
@@ -106,6 +107,9 @@ export default function Post({ data }) {
           <span>Share</span>
         </div>
       </div>
+
+      {/* Post Comment Section */}
+      <PostComment data={data.comments} />
     </div>
   );
 }

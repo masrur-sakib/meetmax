@@ -16,7 +16,7 @@ export default function PublishPostCard() {
         />
         <input
           id='PublishPostInput'
-          className='p-4 w-full h-full bg-gray-50 outline-none placeholder:text-gray-400 text-sm rounded-md cursor-pointer sm:cursor-text'
+          className='p-4 w-full h-full bg-gray-50 outline-none placeholder:text-gray-400 text-sm rounded-md cursor-text'
           name='PublishPostInput'
           type='search'
           placeholder={`What's happenning?`}

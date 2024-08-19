@@ -32,7 +32,7 @@ export default function UserCardBirthday({ data }) {
         <Image
           className='p-1 w-6 h-full bg-blue-50 cursor-pointer'
           src='/icons/send.png'
-          alt={data.name}
+          alt='send-icon'
           width={0}
           height={0}
           unoptimized
