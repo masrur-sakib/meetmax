@@ -66,6 +66,46 @@ export default function Post({ data }) {
       </div>
 
       {/* Post Reaction Section */}
+      <div className='mt-2 px-1 py-2 text-xs sm:text-sm border-y border-gray-200 flex justify-between items-center'>
+        {/* Like */}
+        <div className='flex justify-start items-center space-x-2 cursor-pointer'>
+          <Image
+            className='h-4 w-4'
+            src={`${
+              data.likesCount > 0 ? '/icons/Heart-2.png' : '/icons/Heart.png'
+            }`}
+            alt='LikeIcon'
+            width={0}
+            height={0}
+            unoptimized
+          />
+          <span>Like</span>
+        </div>
+        {/* Comment */}
+        <div className='flex justify-start items-center space-x-2 cursor-pointer'>
+          <Image
+            className='h-4 w-4'
+            src='/icons/Comment.png'
+            alt='LikeIcon'
+            width={0}
+            height={0}
+            unoptimized
+          />
+          <span>Comments</span>
+        </div>
+        {/* Share */}
+        <div className='flex justify-start items-center space-x-2 cursor-pointer'>
+          <Image
+            className='h-4 w-4'
+            src='/icons/Share.png'
+            alt='LikeIcon'
+            width={0}
+            height={0}
+            unoptimized
+          />
+          <span>Share</span>
+        </div>
+      </div>
     </div>
   );
 }

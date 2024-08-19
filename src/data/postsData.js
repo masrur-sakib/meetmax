@@ -7,6 +7,7 @@ export const postsData = [
     postPrivacy: 'Public',
     description: ``,
     images: ['/images/Image1-1-high.png'],
+    likesCount: 3,
     shareCount: 17,
     commentsCount: 3,
     comments: [],
@@ -23,6 +24,7 @@ export const postsData = [
       '/images/Image2-3.png',
       '/images/Image3-3.png',
     ],
+    likesCount: 0,
     shareCount: 5,
     commentsCount: 3,
     comments: [
