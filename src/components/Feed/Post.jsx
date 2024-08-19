@@ -118,9 +118,13 @@ export default function Post({ data }) {
           <Comment key={comment.id} comment={comment} />
         ))}
 
-      <p className='my-4 ml-10 text-sm text-gray-400 cursor-pointer'>
-        See 1 more comment
-      </p>
+      {data.comments.length > 0 ? (
+        <p className='mt-4 ml-2 text-sm text-gray-400 cursor-pointer'>
+          See 1 more comment
+        </p>
+      ) : (
+        ''
+      )}
     </div>
   );
 }
