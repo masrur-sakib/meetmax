@@ -44,6 +44,28 @@ export default function Post({ data }) {
 
       {/* Image Section */}
       {data.images && <PostImage images={data.images} />}
+
+      {/* Post Info Section */}
+      <div className='mt-4 flex justify-between items-center'>
+        <Image
+          className='h-4 w-14'
+          src='/images/seenBy12.png'
+          alt='PastSeen'
+          width={0}
+          height={0}
+          unoptimized
+        />
+        <div className='text-xs text-gray-400 flex justify-end items-center space-x-4'>
+          <p>
+            <span>{data.commentsCount}</span> Comments
+          </p>
+          <p>
+            <span>{data.shareCount}</span> Share
+          </p>
+        </div>
+      </div>
+
+      {/* Post Reaction Section */}
     </div>
   );
 }
