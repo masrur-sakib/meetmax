@@ -15,7 +15,7 @@ export default function Feed() {
 
       {/* Feed with Sidebar */}
       <div className='flex-1 bg-zinc-50 rounded-xl'>
-        <div className='px-6 pt-6 pb-10 flex justify-between items-start space-x-4 xl:space-x-8'>
+        <div className='sm:px-6 sm:pt-6 sm:pb-10 flex justify-between items-start space-x-4 xl:space-x-8'>
           {/* Feed */}
           <div className='flex-1 text-gray-500'>
             <PublishPostCard />
