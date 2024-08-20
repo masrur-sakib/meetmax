@@ -14,7 +14,7 @@ export default function StoryCard({ position }) {
     <div
       className={`${
         user ? 'block' : 'hidden'
-      } flex-1 mt-4 bg-white xs:hidden flex justify-between items-center z-10`}
+      } flex-1 mt-4 bg-white xs:hidden flex justify-between items-center`}
     >
       {position === 'topFeed'
         ? storyData.map((data) => (

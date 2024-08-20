@@ -7,9 +7,9 @@ export default function NavbarSmallScreen() {
   const user = useUserStore((state) => state.user);
   return (
     <header
-      className={user ? 'block sm:hidden sticky top-0 bg-white' : 'hidden'}
+      className={user ? 'block sm:hidden sticky top-0 bg-white z-50' : 'hidden'}
     >
-      <nav className='z-50 px-4 h-16 flex items-center justify-between space-x-4'>
+      <nav className='px-4 h-16 flex items-center justify-between space-x-4'>
         {/* User Avatar  - Small Device */}
         <Image
           src='/users/SalehAhmed.png'
