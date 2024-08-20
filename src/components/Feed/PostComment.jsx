@@ -54,7 +54,7 @@ export default function PostComment({ data }) {
         <div>
           <Image
             className='p-2 h-full w-8 h-full bg-blue-50 cursor-pointer'
-            src='/icons/send.png'
+            src='/icons/Send.png'
             alt='send-icon'
             width={0}
             height={0}

@@ -31,7 +31,7 @@ export default function UserCardBirthday({ data }) {
         />
         <Image
           className='p-1 w-6 h-full bg-blue-50 cursor-pointer'
-          src='/icons/send.png'
+          src='/icons/Send.png'
           alt='send-icon'
           width={0}
           height={0}
@@ -41,7 +41,7 @@ export default function UserCardBirthday({ data }) {
       <div className='mt-4 p-2 bg-zinc-50 flex justify-start items-start space-x-4 cursor-pointer'>
         <Image
           className='h-8 w-8'
-          src='/icons/birthday.png'
+          src='/icons/Birthday.png'
           alt={data.name}
           width={0}
           height={0}

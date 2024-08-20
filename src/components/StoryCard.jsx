@@ -3,7 +3,6 @@
 import { usersData } from '@/data/usersData';
 import { useUserStore } from '@/store/store';
 import UserCardVertical from './UserCardVertical';
-import Image from 'next/image';
 
 export default function StoryCard({ position }) {
   const user = useUserStore((state) => state.user);
@@ -15,7 +14,7 @@ export default function StoryCard({ position }) {
     <div
       className={`${
         user ? 'block' : 'hidden'
-      } flex-1 mt-4 bg-white xs:hidden flex justify-between items-center`}
+      } flex-1 mt-4 bg-white xs:hidden flex justify-between items-center z-10`}
     >
       {position === 'topFeed'
         ? storyData.map((data) => (

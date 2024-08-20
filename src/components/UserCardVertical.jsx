@@ -13,10 +13,11 @@ export default function UserCardVertical({ data }) {
         height={0}
         unoptimized
       />
+      {/* Add Icon */}
       <Image
         className={`${
           data.name === 'Saleh Ahmed' ? 'block' : 'hidden'
-        } p-1 bg-white rounded-xl relative bottom-2 h-4 w-4 2xl:h-5 2xl:w-5`}
+        } p-1 bg-white rounded-xl relative bottom-2 h-4 w-4 2xl:h-5 2xl:w-5 z-10`}
         src='/icons/Add.png'
         alt='add'
         width={0}

@@ -7,12 +7,10 @@ export default function NavbarSmallScreen() {
   const user = useUserStore((state) => state.user);
   return (
     <header
-      className={
-        user ? 'block sm:hidden sticky top-0 bg-white' : 'sticky top-0 bg-white'
-      }
+      className={user ? 'block sm:hidden sticky top-0 bg-white' : 'hidden'}
     >
-      <nav className='z-10 px-4 h-16 flex items-center justify-between space-x-4'>
-        {/* User Avatar - Only Feed Screen - Small Device */}
+      <nav className='z-50 px-4 h-16 flex items-center justify-between space-x-4'>
+        {/* User Avatar  - Small Device */}
         <Image
           src='/users/SalehAhmed.png'
           alt='Search Icon'
@@ -21,7 +19,7 @@ export default function NavbarSmallScreen() {
           height={36}
           priority
         />
-        {/* Search box - Only Feed Screen */}
+        {/* Search box */}
         <div className='flex-1'>
           <div className='flex justify-start items-center space-x-2 w-full h-8 rounded-lg px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300'>
             <Image
