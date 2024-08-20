@@ -1,7 +1,9 @@
 'use client';
+import { useUserStore } from '@/store/store';
 import Image from 'next/image';
 
-export default function ForgotPassword({ setHaveAccount }) {
+export default function ForgotPassword() {
+  const setHaveAccount = useUserStore((state) => state.setHaveAccount);
   return (
     <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12'>
       {/* Section Title and description */}

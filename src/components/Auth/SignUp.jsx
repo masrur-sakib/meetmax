@@ -2,14 +2,40 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import { useUserStore } from '@/store/store';
 
-export default function SignUp({ setHaveAccount }) {
+export default function SignUp() {
+  const setHaveAccount = useUserStore((state) => state.setHaveAccount);
   const [showPassword, setShowPassword] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [dob, setDob] = useState('');
+  const [gender, setGender] = useState('');
+  const router = useRouter();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(name, email, password, dob, gender);
+    const response = await fetch('/signup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, password, dob, gender }),
+    });
+
+    if (response.ok) {
+      setHaveAccount(true);
+    } else {
+      const data = await response.json();
+      alert(data.error);
+    }
   };
   return (
     <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12'>
@@ -69,7 +95,7 @@ export default function SignUp({ setHaveAccount }) {
         </div>
 
         {/* Form */}
-        <form>
+        <form onSubmit={handleSubmit}>
           {/* Email Input */}
           <div className='mt-2 flex justify-start items-center space-x-2 w-full h-10 rounded-md px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300'>
             <Image
@@ -85,7 +111,8 @@ export default function SignUp({ setHaveAccount }) {
               name='email'
               type='email'
               placeholder='Your Email'
-              autoComplete='email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -104,6 +131,8 @@ export default function SignUp({ setHaveAccount }) {
               className='w-full h-full text-gray-500 outline-none placeholder:text-gray-400 sm:text-sm sm:leading-6'
               name='name'
               type='name'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               placeholder='Your Name'
               required
             />
@@ -121,6 +150,8 @@ export default function SignUp({ setHaveAccount }) {
             <input
               type={showPassword ? 'text' : 'password'}
               className='block w-full h-full text-gray-900 outline-none placeholder:text-gray-400 sm:text-sm sm:leading-6'
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder='Create Password'
               required
             />
@@ -180,10 +211,12 @@ export default function SignUp({ setHaveAccount }) {
                 id='name'
                 className='w-full h-full rounded-md border-0 text-gray-900 outline-none placeholder:text-gray-400 sm:text-sm sm:leading-6'
                 name='dateOfBirth'
+                // value={dob}
+                // onChange={(e) => setDob(e.target.value)}
                 placeholderText='Date of birth'
                 required
-                // selected={startDate}
-                // onChange={(date) => setStartDate(date)}
+                selected={dob}
+                onChange={(date) => setDob(date)}
               />
             </div>
 
@@ -202,7 +235,8 @@ export default function SignUp({ setHaveAccount }) {
                     id='inline-radio'
                     className='w-4 h-4 text-blue-600 border-gray-300'
                     type='radio'
-                    value=''
+                    value='male'
+                    onChange={(e) => setGender(e.target.value)}
                     name='inline-radio-group'
                   />
                   <label
@@ -217,7 +251,8 @@ export default function SignUp({ setHaveAccount }) {
                     id='inline-2-radio'
                     className='w-4 h-4 text-blue-600 border-gray-300'
                     type='radio'
-                    value=''
+                    value='female'
+                    onChange={(e) => setGender(e.target.value)}
                     name='inline-radio-group'
                   />
                   <label

@@ -1,9 +1,11 @@
 'use client';
 
+import { useUserStore } from '@/store/store';
 import Image from 'next/image';
 import { useState } from 'react';
 
-export default function SignIn({ setHaveAccount, setUser }) {
+export default function SignIn() {
+  const setHaveAccount = useUserStore((state) => state.setHaveAccount);
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -173,7 +175,6 @@ export default function SignIn({ setHaveAccount, setUser }) {
             <button
               type='submit'
               className='flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm bg-blue-500 hover:bg-blue-400'
-              onClick={() => setUser(true)}
             >
               Sign In
             </button>

@@ -1,19 +1,19 @@
 'use client';
-import { useState } from 'react';
+import { useUserStore } from '@/store/store';
 import SignUp from './SignUp';
 import SignIn from './SignIn';
 import ForgotPassword from './ForgotPassword';
 
-export default function Auth({ setUser }) {
-  const [haveAccount, setHaveAccount] = useState(false);
+export default function Auth() {
+  const haveAccount = useUserStore((state) => state.haveAccount);
   return (
     <>
       {haveAccount === true ? (
-        <SignIn setHaveAccount={setHaveAccount} setUser={setUser} />
+        <SignIn />
       ) : haveAccount === false ? (
-        <SignUp setHaveAccount={setHaveAccount} />
+        <SignUp />
       ) : (
-        <ForgotPassword setHaveAccount={setHaveAccount} />
+        <ForgotPassword />
       )}
     </>
   );
