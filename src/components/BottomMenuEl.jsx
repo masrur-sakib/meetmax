@@ -1,8 +1,10 @@
 'use client';
 
+import { useUserStore } from '@/store/store';
 import Image from 'next/image';
 
 export default function BottomMenuEl({ data, selected }) {
+  const setUser = useUserStore((state) => state.setUser);
   return (
     <div
       className={`${
@@ -19,7 +21,12 @@ export default function BottomMenuEl({ data, selected }) {
           </span>
         )}
       </div>
-      <p className='text-xs'>{data.name}</p>
+      <p
+        className='text-xs'
+        onClick={() => (data.name === 'Settings' ? setUser() : null)}
+      >
+        {data.name}
+      </p>
     </div>
   );
 }
