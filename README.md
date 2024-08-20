@@ -30,3 +30,4 @@ npm run dev
 
 <a  target="_blank" href="https://meetmax-delta.vercel.app/">Live Site Link</a>
 
+### Detailed description will be provided soon!
