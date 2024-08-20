@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useUserStore } from '@/store/store';
@@ -10,12 +9,13 @@ import { useUserStore } from '@/store/store';
 export default function SignUp() {
   const setHaveAccount = useUserStore((state) => state.setHaveAccount);
   const [showPassword, setShowPassword] = useState(false);
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [dob, setDob] = useState('');
-  const [gender, setGender] = useState('');
-  const router = useRouter();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: '',
+    dob: '',
+    gender: '',
+  });
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -23,14 +23,20 @@ export default function SignUp() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, password, dob, gender);
     const response = await fetch('/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, password, dob, gender }),
+      body: JSON.stringify({ ...formData }),
     });
 
     if (response.ok) {
+      setFormData({
+        name: '',
+        email: '',
+        password: '',
+        dob: '',
+        gender: '',
+      });
       setHaveAccount(true);
     } else {
       const data = await response.json();
@@ -111,8 +117,10 @@ export default function SignUp() {
               name='email'
               type='email'
               placeholder='Your Email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
               required
             />
           </div>
@@ -131,8 +139,10 @@ export default function SignUp() {
               className='w-full h-full text-gray-500 outline-none placeholder:text-gray-400 sm:text-sm sm:leading-6'
               name='name'
               type='name'
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
               placeholder='Your Name'
               required
             />
@@ -150,8 +160,10 @@ export default function SignUp() {
             <input
               type={showPassword ? 'text' : 'password'}
               className='block w-full h-full text-gray-900 outline-none placeholder:text-gray-400 sm:text-sm sm:leading-6'
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={formData.password}
+              onChange={(e) =>
+                setFormData({ ...formData, password: e.target.value })
+              }
               placeholder='Create Password'
               required
             />
@@ -211,12 +223,10 @@ export default function SignUp() {
                 id='name'
                 className='w-full h-full rounded-md border-0 text-gray-900 outline-none placeholder:text-gray-400 sm:text-sm sm:leading-6'
                 name='dateOfBirth'
-                // value={dob}
-                // onChange={(e) => setDob(e.target.value)}
+                selected={formData.dob}
+                onChange={(date) => setFormData({ ...formData, dob: date })}
                 placeholderText='Date of birth'
                 required
-                selected={dob}
-                onChange={(date) => setDob(date)}
               />
             </div>
 
@@ -236,12 +246,14 @@ export default function SignUp() {
                     className='w-4 h-4 text-blue-600 border-gray-300'
                     type='radio'
                     value='male'
-                    onChange={(e) => setGender(e.target.value)}
+                    onChange={(e) =>
+                      setFormData({ ...formData, gender: e.target.value })
+                    }
                     name='inline-radio-group'
                   />
                   <label
                     htmlFor='inline-radio'
-                    className='ms-2 text-sm text-gray-400'
+                    className='ms-2 text-sm text-gray-500'
                   >
                     Male
                   </label>
@@ -252,12 +264,14 @@ export default function SignUp() {
                     className='w-4 h-4 text-blue-600 border-gray-300'
                     type='radio'
                     value='female'
-                    onChange={(e) => setGender(e.target.value)}
+                    onChange={(e) =>
+                      setFormData({ ...formData, gender: e.target.value })
+                    }
                     name='inline-radio-group'
                   />
                   <label
                     htmlFor='inline-2-radio'
-                    className='ms-2 text-sm text-gray-400'
+                    className='ms-2 text-sm text-gray-500'
                   >
                     Female
                   </label>

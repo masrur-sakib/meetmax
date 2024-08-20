@@ -8,7 +8,6 @@ import { users } from '@/data/users';
 // }
 
 export async function POST(request) {
-  console.log('working');
   const { name, email, password } = await request.json();
 
   if (!name || !email || !password) {
