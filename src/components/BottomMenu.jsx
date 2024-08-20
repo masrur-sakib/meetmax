@@ -7,7 +7,6 @@ import { useSession } from 'next-auth/react';
 
 export default function BottomMenu() {
   const { data: session } = useSession();
-
   const [selected, setSelected] = useState('Feed');
   return (
     <div

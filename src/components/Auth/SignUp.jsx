@@ -72,7 +72,7 @@ export default function SignUp() {
               height={15}
               priority
             />
-            <span>Log in with Google</span>
+            <span>Login with Google</span>
           </button>
 
           {/* Apple Sign in */}
@@ -88,7 +88,7 @@ export default function SignUp() {
               height={15}
               priority
             />
-            <span>Log in with Apple</span>
+            <span>Login with Apple</span>
           </button>
         </div>
 

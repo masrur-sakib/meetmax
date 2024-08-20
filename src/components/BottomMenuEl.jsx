@@ -24,7 +24,7 @@ export default function BottomMenuEl({ data, selected }) {
       </div>
       <p
         className='text-xs'
-        onClick={() => (data.name === 'Logout' ? signOut : null)}
+        onClick={() => (data.name === 'Logout' ? signOut() : null)}
       >
         {data.name}
       </p>

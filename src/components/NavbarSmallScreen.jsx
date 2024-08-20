@@ -1,11 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import { useUserStore } from '@/store/store';
 import { useSession } from 'next-auth/react';
 
 export default function NavbarSmallScreen() {
-  const user = useUserStore((state) => state.user);
   const { data: session, status } = useSession();
   return (
     <header
