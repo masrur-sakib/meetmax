@@ -1,7 +1,7 @@
 export const bottomMenuData = [
   {
     id: 'af7c1fe6-d669-414e-b066-e9733f0de7a8',
-    src: '/icons/Feed1.png',
+    src: '/icons/Feed.png',
     name: 'Feed',
     alertNumbers: 0,
   },
