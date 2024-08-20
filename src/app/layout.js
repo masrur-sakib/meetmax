@@ -1,6 +1,7 @@
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
+import BottomMenu from '@/components/BottomMenu';
 
 const font = Roboto({
   subsets: ['latin'],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={font.className}>
         <Header />
         {children}
+        <BottomMenu />
       </body>
     </html>
   );

@@ -31,7 +31,7 @@ export default function Feed() {
       <LeftSidebar />
 
       {/* Feed */}
-      <div className='sm:pl-6 sm:pr-6 xl:pr-0 sm:pt-6 pb-6 flex-1 bg-zinc-50 rounded-xl text-gray-500'>
+      <div className='sm:pl-6 sm:pr-6 xl:pr-0 sm:pt-6 pb-24 sm:pb-6 flex-1 bg-zinc-50 rounded-xl text-gray-500'>
         {/* Story Section - Only Small Screen */}
         <StoryCard position='topFeed' />
 
