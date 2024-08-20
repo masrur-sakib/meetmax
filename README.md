@@ -57,12 +57,29 @@ GOOGLE_SECRET=your_google_client_secret
 
 #### Live Site Link - https://meetmax-delta.vercel.app/
 
-## Screenshots
+## Project Screenshots
 
+## Feed with Post Card
 ![Feed with Post Card](./assets/feed-with-post.png)
+
+
+
+## Feed with Collage View
 ![Feed with Collage View](./assets/feed-with-collage-view.png)
+
+
+
+## Feed with Comments & Replies
 ![Feed with Comments & Replies](./assets/feed-with-comments-replies.png)
-![Feed Small Screen](./assets/mobile-view.png)
+
+
+
+## Authentication
 ![SignUp UI](./assets/signup.png)
-![SignIn UI](./assets/signin.png)
-![SignIn UI](./assets/forgot-password.png)
+
+
+
+## Small Screen UI
+<div align="center">
+  <img src="./assets/mobile-view.png" alt="MeetMax Logo" style="max-width: 100%; height: auto;">
+</div>
