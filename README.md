@@ -55,3 +55,8 @@ GOOGLE_SECRET=your_google_client_secret
 - **Logout**: Securely log out from the application.
 
 #### Live Site Link - https://meetmax-delta.vercel.app/
+
+## Screenshots
+![Feed page with post card](https://github.com/masrur-sakib/meetmax/images/01.png)
+
+![MeetMax App Screenshot](./images/02.png)
