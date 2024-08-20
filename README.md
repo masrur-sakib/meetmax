@@ -30,10 +30,11 @@ To run the MeetMax application locally, follow these steps:
 1. Clone the repository: `git clone https://github.com/masrur-sakib/meetmax.git`
 2. Install dependencies: `npm install`
 3. Set up environment variables, Create a .env.local file in the root directory. Add environment variables for Next Auth and other services.
-5. Run the development server: `npm run dev`
-6. Open the application in your browser: `http://localhost:3000`
+4. Run the development server: `npm run dev`
+5. Open the application in your browser: `http://localhost:3000`
 
 ## Setup .env file
+
 ```js
 AUTH_SECRET="yumRbutgSuU/fY7TaYDPgMW8HsjVHKQitnkkjlxp6jA="
 
@@ -57,8 +58,13 @@ GOOGLE_SECRET=your_google_client_secret
 #### Live Site Link - https://meetmax-delta.vercel.app/
 
 ## Screenshots
-![Feed page with post card](./assets/01.png)
+
+![Feed page with post card](./assets/meetmax-one.png)
+
+![Feed page with post card](./assets/meetmax-two.jpg)
+
+![Feed page with post card](./assets/02.png)
 
 ![Feed page with post card](assets/01.png)
 
-![MeetMax App Screenshot](https://github.com/masrur-sakib/meetmax/assets/02.png)
+![MeetMax App Screenshot](https://github.com/masrur-sakib/meetmax/assets/meetmax-two.jpg)
