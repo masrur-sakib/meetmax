@@ -29,7 +29,6 @@ export default function SignIn() {
     if (result?.error) {
       alert(result.error);
     } else {
-      // router.push('/dashboard');
       console.log('Sign In Success');
       router.push('/');
     }

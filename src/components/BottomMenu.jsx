@@ -3,12 +3,10 @@
 import { useState } from 'react';
 import { bottomMenuData } from '@/data/bottomMenuData';
 import BottomMenuEl from './BottomMenuEl';
-import { useUserStore } from '@/store/store';
 import { useSession } from 'next-auth/react';
 
 export default function BottomMenu() {
-  // const user = useUserStore((state) => state.user);
-  const { session } = useSession();
+  const { data: session } = useSession();
 
   const [selected, setSelected] = useState('Feed');
   return (
