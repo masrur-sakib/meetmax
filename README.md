@@ -6,8 +6,8 @@ Features:
 - Tailwind design
 - Full responsiveness
 - Credential authentication
-- Google authentication
-- Github authentication
+- SignUp
+- SignIn
 
 ### Cloning the repository
 
@@ -26,5 +26,7 @@ npm i or npm install
 ```shell
 npm run dev
 ```
+### Project Link:
 
+<a  target="_blank" href="https://meetmax-delta.vercel.app/">Live Site Link</a>
 
