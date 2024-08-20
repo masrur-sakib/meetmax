@@ -27,8 +27,4 @@ npm i or npm install
 npm run dev
 ```
 
-### Project Links:
-
-<a  target="_blank" href="https://meetmax-delta.vercel.app/">Live Site Link</a>
-
 
