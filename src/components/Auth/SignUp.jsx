@@ -23,8 +23,8 @@ export default function SignUp({ setHaveAccount }) {
         </h6>
       </div>
 
-      {/* Login Card */}
-      <div className=' mt-8 px-6 py-8 sm:p-12 mx-auto lg:w-7/12 max-w-lg shadow-lg rounded-xl'>
+      {/* Sign Up Card */}
+      <div className=' mt-8 px-6 py-8 sm:p-12 mx-auto lg:w-7/12 max-w-lg shadow-lg border border-gray-100 rounded-xl'>
         {/* Google & Apple Sign in buttons */}
         <div className='flex justify-evenly items-center space-x-2 sm:space-x-4'>
           {/* Google Sign in */}
@@ -235,7 +235,7 @@ export default function SignUp({ setHaveAccount }) {
           <div className='mt-6'>
             <button
               type='submit'
-              className='flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm bg-blue-500 hover:bg-blue-600'
+              className='flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm bg-blue-500 hover:bg-blue-400'
             >
               Sign Up
             </button>
@@ -246,7 +246,7 @@ export default function SignUp({ setHaveAccount }) {
         <p className='mt-4 text-center text-sm text-gray-500 cursor-pointer'>
           Already have an account?{' '}
           <span
-            className='font-semibold leading-6 text-blue-500 hover:text-blue-600'
+            className='font-semibold leading-6 text-blue-400 hover:text-blue-500'
             onClick={() => setHaveAccount(true)}
           >
             Sign In

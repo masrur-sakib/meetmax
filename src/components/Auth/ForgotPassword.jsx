@@ -14,8 +14,8 @@ export default function ForgotPassword({ setHaveAccount }) {
         </h6>
       </div>
 
-      {/* Login Card */}
-      <div className='mt-8 px-6 py-8 sm:p-12 mx-auto mt lg:w-7/12 max-w-lg shadow-lg rounded-xl'>
+      {/* Forgot Password Card */}
+      <div className='mt-8 px-6 py-8 sm:p-12 mx-auto mt lg:w-7/12 max-w-lg shadow-lg border border-gray-100 rounded-xl'>
         {/* Form */}
         <form>
           {/* Email Input */}
@@ -51,7 +51,7 @@ export default function ForgotPassword({ setHaveAccount }) {
 
         {/* Sign Up Note */}
         <p
-          className='mt-4 text-center text-sm font-semibold text-blue-500 hover:text-blue-400 cursor-pointer'
+          className='mt-4 text-center text-sm font-semibold text-blue-400 hover:text-blue-500 cursor-pointer'
           onClick={() => setHaveAccount(true)}
         >
           {'< '} Back to Sign In
