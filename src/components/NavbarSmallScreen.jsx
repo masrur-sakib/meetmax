@@ -2,12 +2,16 @@
 
 import Image from 'next/image';
 import { useUserStore } from '@/store/store';
+import { useSession } from 'next-auth/react';
 
 export default function NavbarSmallScreen() {
   const user = useUserStore((state) => state.user);
+  const { data: session, status } = useSession();
   return (
     <header
-      className={user ? 'block sm:hidden sticky top-0 bg-white z-50' : 'hidden'}
+      className={
+        session ? 'block sm:hidden sticky top-0 bg-white z-50' : 'hidden'
+      }
     >
       <nav className='px-4 h-16 flex items-center justify-between space-x-4'>
         {/* User Avatar  - Small Device */}

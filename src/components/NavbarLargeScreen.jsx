@@ -3,13 +3,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useUserStore } from '@/store/store';
+import { useSession } from 'next-auth/react';
 
 export default function NavbarLargeScreen() {
+  const { data: session, status } = useSession();
   const user = useUserStore((state) => state.user);
   return (
     <header
       className={
-        user ? 'hidden sm:block sticky top-0 bg-white' : 'sticky top-0 bg-white'
+        session
+          ? 'hidden sm:block sticky top-0 bg-white'
+          : 'sticky top-0 bg-white'
       }
     >
       <nav className='z-10 mx-auto px-4 h-20 lg:px-8 flex items-center justify-between space-x-4'>
@@ -28,7 +32,7 @@ export default function NavbarLargeScreen() {
         </div>
 
         {/* Language Dropdown - Only Auth Screen */}
-        <div className={user ? 'hidden' : 'right-0 flex items-center'}>
+        <div className={session ? 'hidden' : 'right-0 flex items-center'}>
           <label htmlFor='language' className='sr-only'>
             Language
           </label>
@@ -43,7 +47,7 @@ export default function NavbarLargeScreen() {
         </div>
 
         {/* Search box - Only Feed Screen */}
-        <div className={user ? 'flex-1' : 'hidden'}>
+        <div className={session ? 'flex-1' : 'hidden'}>
           <div className='flex justify-start items-center space-x-2 w-full h-10 rounded-lg px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300'>
             <Image
               src='/icons/Search.png'
@@ -64,7 +68,7 @@ export default function NavbarLargeScreen() {
         </div>
 
         {/* User Name and Avatar - Only Feed Screen */}
-        <div className={user ? 'w-1/3 lg:w-2/5' : 'hidden'}>
+        <div className={session ? 'w-1/3 lg:w-2/5' : 'hidden'}>
           <div className='flex justify-end items-center space-x-4 font-normal text-gray-500 text-md'>
             <span>Saleh Ahmed</span>
             <Image
