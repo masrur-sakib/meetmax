@@ -57,6 +57,8 @@ GOOGLE_SECRET=your_google_client_secret
 #### Live Site Link - https://meetmax-delta.vercel.app/
 
 ## Screenshots
-![Feed page with post card](https://github.com/masrur-sakib/meetmax/images/01.png)
+![Feed page with post card](./assets/01.png)
 
-![MeetMax App Screenshot](./images/02.png)
+![Feed page with post card](assets/01.png)
+
+![MeetMax App Screenshot](https://github.com/masrur-sakib/meetmax/assets/02.png)
