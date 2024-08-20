@@ -2,8 +2,7 @@ import NextAuth from 'next-auth';
 import AppleProvider from 'next-auth/providers/apple';
 import GoogleProvider from 'next-auth/providers/google';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import bcrypt from 'bcryptjs';
-import { usersData } from '@/data/usersData';
+import { getUserByEmail, validatePassword } from '@/app/lib/users';
 
 const handler = NextAuth({
   providers: [
@@ -26,16 +25,7 @@ const handler = NextAuth({
           return null;
         }
 
-        // Find user in db
-        const user = (email) => {
-          return usersData.find((user) => user.email === email);
-        };
-
-        // Password Validate
-        const validatePassword = async (user, inputPassword) => {
-          return bcrypt.compare(inputPassword, user.password);
-        };
-
+        const user = getUserByEmail(credentials.email);
         if (user && (await validatePassword(user, credentials.password))) {
           return { id: user.id, name: user.name, email: user.email };
         }

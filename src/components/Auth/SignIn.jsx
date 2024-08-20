@@ -3,13 +3,32 @@
 import { useUserStore } from '@/store/store';
 import Image from 'next/image';
 import { useState } from 'react';
+import { signIn } from 'next-auth/react';
 
 export default function SignIn() {
   const setHaveAccount = useUserStore((state) => state.setHaveAccount);
   const [showPassword, setShowPassword] = useState(false);
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const result = await signIn('credentials', {
+      ...formData,
+      redirect: false,
+    });
+    if (result?.error) {
+      alert(result.error);
+    } else {
+      // router.push('/dashboard');
+      console.log('Sign In Success');
+    }
   };
   return (
     <div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12'>
@@ -69,7 +88,7 @@ export default function SignIn() {
         </div>
 
         {/* Form */}
-        <form>
+        <form onSubmit={handleSubmit}>
           {/* Email Input */}
           <div className='mt-2 flex justify-start items-center space-x-2 w-full h-10 rounded-md px-4 py-2 shadow-sm ring-1 ring-inset ring-gray-300'>
             <Image
@@ -84,8 +103,11 @@ export default function SignIn() {
               className='w-full h-full text-gray-500 outline-none placeholder:text-gray-400 sm:text-sm sm:leading-6'
               name='email'
               type='email'
+              value={formData.email}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
               placeholder='Your Email'
-              autoComplete='email'
               required
             />
           </div>
@@ -102,6 +124,10 @@ export default function SignIn() {
             <input
               type={showPassword ? 'text' : 'password'}
               className='block w-full h-full text-gray-900 outline-none placeholder:text-gray-400 sm:text-sm sm:leading-6'
+              value={formData.password}
+              onChange={(e) =>
+                setFormData({ ...formData, password: e.target.value })
+              }
               placeholder='Enter Password'
               required
             />
