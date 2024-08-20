@@ -155,13 +155,13 @@ export default function SignIn({ setHaveAccount, setUser }) {
               />
               <label
                 htmlFor='remember-me'
-                className='ml-2 text-sm text-gray-600 hover:text-blue-500 cursor-pointer'
+                className='ml-2 text-xs sm:text-sm text-gray-600 hover:text-blue-500 cursor-pointer'
               >
                 Remember me
               </label>
             </div>
             <span
-              className='text-sm text-gray-600 hover:text-blue-500 cursor-pointer'
+              className='text-xs sm:text-sm text-gray-600 hover:text-blue-500 cursor-pointer'
               onClick={() => setHaveAccount('forgot-password')}
             >
               Forgot Password?
