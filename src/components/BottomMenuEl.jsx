@@ -2,6 +2,7 @@
 
 import { useUserStore } from '@/store/store';
 import Image from 'next/image';
+import { signOut } from 'next-auth/react';
 
 export default function BottomMenuEl({ data, selected }) {
   const setUser = useUserStore((state) => state.setUser);
@@ -23,7 +24,7 @@ export default function BottomMenuEl({ data, selected }) {
       </div>
       <p
         className='text-xs'
-        onClick={() => (data.name === 'Logout' ? setUser() : null)}
+        onClick={() => (data.name === 'Logout' ? signOut : null)}
       >
         {data.name}
       </p>

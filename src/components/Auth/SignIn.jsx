@@ -4,6 +4,7 @@ import { useUserStore } from '@/store/store';
 import Image from 'next/image';
 import { useState } from 'react';
 import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 export default function SignIn() {
   const setHaveAccount = useUserStore((state) => state.setHaveAccount);
@@ -12,6 +13,8 @@ export default function SignIn() {
     email: '',
     password: '',
   });
+
+  const router = useRouter();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -28,6 +31,7 @@ export default function SignIn() {
     } else {
       // router.push('/dashboard');
       console.log('Sign In Success');
+      router.push('/');
     }
   };
   return (

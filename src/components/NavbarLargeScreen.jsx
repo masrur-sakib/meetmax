@@ -6,7 +6,6 @@ import { useUserStore } from '@/store/store';
 
 export default function NavbarLargeScreen() {
   const user = useUserStore((state) => state.user);
-  const setUser = useUserStore((state) => state.setUser);
   return (
     <header
       className={
@@ -15,7 +14,7 @@ export default function NavbarLargeScreen() {
     >
       <nav className='z-10 mx-auto px-4 h-20 lg:px-8 flex items-center justify-between space-x-4'>
         {/* Site Logo */}
-        <div className='w-1/5' onClick={() => setUser()}>
+        <div className='w-1/5'>
           <Link className='flex items-center' href='/'>
             <Image
               src='/logo.png'
