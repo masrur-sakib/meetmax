@@ -59,12 +59,10 @@ GOOGLE_SECRET=your_google_client_secret
 
 ## Screenshots
 
-![Feed page with post card](./assets/meetmax-one.png)
-
-![Feed page with post card](./assets/meetmax-two.jpg)
-
-![Feed page with post card](./assets/02.png)
-
-![Feed page with post card](assets/01.png)
-
-![MeetMax App Screenshot](https://github.com/masrur-sakib/meetmax/assets/meetmax-two.jpg)
+![Feed with Post Card](./assets/feed-with-post.png)
+![Feed with Collage View](./assets/feed-with-collage-view.png)
+![Feed with Comments & Replies](./assets/feed-with-comments-replies.png)
+![Feed Small Screen](./assets/mobile-view.png)
+![SignUp UI](./assets/signup.png)
+![SignIn UI](./assets/signin.png)
+![SignIn UI](./assets/forgot-password.png)
