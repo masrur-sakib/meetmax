@@ -7,8 +7,13 @@ import Post from './Post';
 import PublishPostCard from './PublishPostCard';
 import RightSidebar from './RightSidebar';
 import StoryCard from '../StoryCard';
+import EventCard from '../EventCard';
+import Image from 'next/image';
+import { eventsData } from '@/data/eventsData';
 
 export default function Feed() {
+  const eventSectionInsertPosition = 1;
+
   return (
     <div className='flex items-start justify-start'>
       {/*Left  Sidebar */}
@@ -23,8 +28,31 @@ export default function Feed() {
         <PublishPostCard />
 
         {/* Posts */}
-        {postsData.map((data) => (
-          <Post key={data.id} data={data} />
+        {postsData.map((data, index) => (
+          <>
+            <Post key={data.id} data={data} />
+
+            {index === eventSectionInsertPosition - 1 && (
+              <div className='mt-6 xs:hidden bg-white rounded-lg'>
+                <div className='p-2 flex justify-between items-center border-b border-gray-200'>
+                  <p className='font-semibold text-sm'>Recent Event</p>
+                  <Image
+                    src='/icons/ThreeDots.png'
+                    className='cursor-pointer'
+                    alt='ThreeDotsIcon'
+                    width={16}
+                    height={8}
+                    unoptimized
+                  />
+                </div>
+
+                {/* Event Card */}
+                {eventsData.map((data) => (
+                  <EventCard key={data.id} data={data} />
+                ))}
+              </div>
+            )}
+          </>
         ))}
       </div>
 

@@ -48,11 +48,11 @@ export default function FeedSidebar() {
             unoptimized
           />
         </div>
-        <div className='py-4 flex flex-col justify-center items-center'>
-          {eventsData.map((data) => (
-            <EventCard key={data.id} data={data} />
-          ))}
-        </div>
+
+        {/* Event Card */}
+        {eventsData.map((data) => (
+          <EventCard key={data.id} data={data} />
+        ))}
       </div>
 
       {/* Birthdays Section */}
