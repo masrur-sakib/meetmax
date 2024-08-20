@@ -20,7 +20,7 @@ export default function UserCardBirthday({ data }) {
         </div>
       </div>
       {/* Send Message */}
-      <div className='mt-2 h-6 flex justify-between items-center space-x-2'>
+      <div className='mt-2 h-7 flex justify-between items-center space-x-2'>
         <input
           id='birthdayInput'
           className='p-2 w-full h-full bg-gray-50 outline-none placeholder:text-gray-400 text-xs rounded-md'
