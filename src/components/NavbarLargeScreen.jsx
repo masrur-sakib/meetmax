@@ -2,12 +2,10 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useUserStore } from '@/store/store';
 import { useSession } from 'next-auth/react';
 
 export default function NavbarLargeScreen() {
   const { data: session, status } = useSession();
-  const user = useUserStore((state) => state.user);
   return (
     <header
       className={

@@ -5,6 +5,7 @@ import { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useUserStore } from '@/store/store';
+import { signIn } from 'next-auth/react';
 
 export default function SignUp() {
   const setHaveAccount = useUserStore((state) => state.setHaveAccount);
@@ -63,6 +64,7 @@ export default function SignUp() {
           <button
             type='button'
             className='px-2 sm:px-3 py-3 mb-2 text-xs sm:text-sm text-gray-700 outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 flex justify-between items-center space-x-1 sm:space-x-4'
+            onClick={() => signIn('google')}
           >
             <Image
               className='sm:w-4'
@@ -79,6 +81,7 @@ export default function SignUp() {
           <button
             type='button'
             className='px-2 sm:px-3 py-3 mb-2 text-xs sm:text-sm text-gray-700 outline-none bg-gray-50 rounded-lg border border-gray-200 hover:bg-gray-100 flex justify-between items-center space-x-1 sm:space-x-4'
+            onClick={() => signIn('apple')}
           >
             <Image
               className='sm:w-4'

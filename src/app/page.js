@@ -11,13 +11,11 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    if (status === 'unauthenticated') {
+    if (session || status !== 'unauthenticated') {
+      router.push('/');
+    } else {
       router.push('/auth');
     }
-  }, [status, router]);
-
-  if (!session) {
-    return null;
-  }
-  return <>{status === 'unauthenticated' ? <Auth /> : <Feed />}</>;
+  }, [session, status, router]);
+  return <>{session ? <Feed /> : <Auth />}</>;
 }
