@@ -25,8 +25,8 @@ export const bottomMenuData = [
   },
   {
     id: '5108babc-bf35-44d5-a9ba-de08badfa80a',
-    src: '/icons/Settings.png',
-    name: 'Settings',
+    src: '/icons/Logout.png',
+    name: 'Logout',
     alertNumbers: 0,
   },
 ];
