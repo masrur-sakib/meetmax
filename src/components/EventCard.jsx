@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function EventCard({ data }) {
   return (
     <div className='px-4 pt-4 last:pb-4 flex flex-col justify-center items-center'>
-      <div className='p-2 w-full 2xl:px-4 max-w-80 xl:max-w-60 bg-zinc-50 rounded-lg cursor-pointer'>
+      <div className='p-2 w-full 2xl:px-4 max-w-80 bg-zinc-50 rounded-lg cursor-pointer'>
         <div className='pb-2 flex justify-between items-start space-x-4 border-b border-gray-200'>
           <Image
             className='h-8 w-8'

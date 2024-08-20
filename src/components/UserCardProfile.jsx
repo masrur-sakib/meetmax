@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function UserCardProfile({ data }) {
   return (
     <div className='p-4'>
-      <div className='flex justify-start items-start space-x-6'>
+      <div className='flex justify-center items-start space-x-6 2xl:space-x-10'>
         <Image
           className='h-10 w-10'
           src={data.avatar}
@@ -50,7 +50,7 @@ export default function UserCardProfile({ data }) {
         </div>
       </div>
       {/* Buttons */}
-      <div className='mt-4 flex justify-start items-center space-x-4 2xl:space-x-6'>
+      <div className='mt-4 flex justify-center items-center space-x-4 2xl:space-x-8'>
         <button
           type='button'
           className='px-7 py-1.5 text-xs outline-none rounded-lg border border-gray-200 hover:bg-gray-100'
