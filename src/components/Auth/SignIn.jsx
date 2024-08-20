@@ -145,7 +145,7 @@ export default function SignIn({ setHaveAccount, setUser }) {
           </div>
 
           {/* Remember me & Forgot Password */}
-          <div className='mt-4 mx-4 flex justify-between items-center space-x-4'>
+          <div className='mt-4 mx-2 flex justify-between items-center space-x-4'>
             <div className='flex items-center'>
               <input
                 id='remember-me'
