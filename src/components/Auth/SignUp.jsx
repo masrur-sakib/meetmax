@@ -228,6 +228,7 @@ export default function SignUp() {
                 name='dateOfBirth'
                 selected={formData.dob}
                 onChange={(date) => setFormData({ ...formData, dob: date })}
+                maxDate={new Date()}
                 placeholderText='Date of birth'
                 required
               />
