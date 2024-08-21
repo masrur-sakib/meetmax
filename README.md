@@ -2,10 +2,12 @@
 
 Meetmax is a social network application built using Next.js 14, Tailwind CSS, Next Auth, React, react-datepicker, and uuid. The project also utilizes ESLint for code quality and linting.
 
+#### Live Site Link - https://meetmax-delta.vercel.app/
+
 ## Features
 
 - **Sign Up**: Users can create a new account by providing their email, password, name, dob & gender information.
-- **Sign In**: Users can sign in to the application using their custom email and password, or by signing in with their Apple/Google account.
+- **Sign In**: Users can sign in to the application using their custom email and password, or by signing in with their Google account.
 - **Authentication**: Secure Authentication using Next Auth.
 - **State Management**: The application uses state management to handle user authentication and other data.
 - **Logout**: Users can log out of the application.
@@ -50,36 +52,31 @@ GOOGLE_SECRET=your_google_client_secret
 
 ## Usage
 
-- **Sign Up**: Create a new account using your email or sign up with Apple or Google.
-- **Sign In**: Log in with your credentials or use Apple or Google for quick access.
+- **Sign Up**: Create a new account using your email & password or sign up with Google.
+- **Sign In**: Log in with your credentials or use Google for quick access.
 - **Explore Feed**: Browse the feed page to view content from other users.
 - **Logout**: Securely log out from the application.
-
-#### Live Site Link - https://meetmax-delta.vercel.app/
 
 ## Project Screenshots
 
 ## Feed with Post Card
+
 ![Feed with Post Card](./assets/feed-with-post.png)
 
-
-
 ## Feed with Collage View
+
 ![Feed with Collage View](./assets/feed-with-collage-view.png)
 
-
-
 ## Feed with Comments & Replies
+
 ![Feed with Comments & Replies](./assets/feed-with-comments-replies.png)
 
-
-
 ## Authentication
+
 ![SignUp UI](./assets/signup.png)
 
-
-
 ## Small Screen UI
+
 <div align="center">
   <img src="./assets/mobile-view.png" alt="MeetMax Logo" style="max-width: 100%; height: auto;">
 </div>
